@@ -1,0 +1,15 @@
+{% extends "layout.html"%}
+
+{% block content %}
+ <!-- signUp Design -->
+ <!-- Codes -->
+<section class="signUpSec">
+  <h1>{{ note }}</h1>
+  <form class="signUp_Form" action="{% url 'signUp' %}" method="post">
+  {% csrf_token %}
+  <h1 class="signUp"><b>USER REGISTRATION</b></h1>
+  {{ signUpForm }} 
+  <input type="submit" name="" value="CONTINUE">
+ </form>
+</section>
+ {% endblock %}

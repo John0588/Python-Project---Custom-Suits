@@ -1,0 +1,16 @@
+{% extends "layout.html"%}
+
+{% block content %}
+ <!-- Sign In Design -->
+ <!-- Codes -->
+ <section class="signInSec">
+  <h2>{{ note }}</h2>
+  <form class="signIn_Form" action="{% url 'signIn' %}" method="post">
+   {% csrf_token %}
+   <h1 class="signIn"><b>SIGN IN</b></h1>
+   {{ signInForm }} 
+  <input type="submit" name="" value="CONTINUE">
+  <h1 onclick="password()">Forget your Password? <b>Click Me</b></h1>
+ </form>
+</section>
+ {% endblock %}

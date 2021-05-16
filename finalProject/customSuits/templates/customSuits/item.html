@@ -1,0 +1,306 @@
+{% extends "layout2.html"%}
+
+{% block content %}
+<!-- Item Section -->
+<!-- Codes -->
+<section class="itemSec">
+ <div class="item_ro">
+  <div class="col-2">
+    <h1 class="items" ><b>Discover true personalization</b></h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Rem possimus iure vitae molestiae necessitatibus velit doloremque deleniti eaque nihil in? <br>Minima illo deleniti quidem ullam ipsa omnis similique porro ab.</p>
+    <a href="#" target="_blank" rel="noopener noreferrer" class="btn">About Us &#8594;</a>
+   </div>
+   <div class="col-2">
+    {% load static %}  
+    <img src="{% static 'images/itemImage.jpg'%}" alt="No Item Image" />
+   </div>
+ </div>
+</section>
+
+<section class="itemsCart">
+ <div class="categories">
+  <div class="small-container">
+    <div class="item_Cart">
+      <div class="col-3">
+        {% load static %}
+        <img src="{% static 'images/item1.jpg'%}" alt="Item Image" />
+      </div>
+      <div class="col-3">
+        {% load static %}
+        <img src="{% static 'images/item2.jpg'%}" alt="Item Image" />
+      </div>
+      <div class="col-3">
+        {% load static %}
+        <img src="{% static 'images/item3.jpg'%}" alt="Item Image" />
+      </div>
+      <div class="col-3">
+        {% load static %}
+       <img src="{% static 'images/item4.jpg'%}" alt="Item Image" />
+     </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<h2 class="itemSec1">Featured Products</h2>
+<section class="itemsCart">
+ <div class="categories">
+  <div class="small-container">
+    <div class="item_Cart">
+      <div class="col-3">
+        <div class="items_name">
+          {% load static %}
+          <img src="{% static 'images/item1B.jpg'%}" alt="Item Image" />
+          <h2 class="itemName">Item_1</h2>
+          <p class="itemPrice">$ 100</p>
+          <button class="itemBuy">Buy Me</button>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="items_name">
+          {% load static %}
+          <img src="{% static 'images/item2B.jpg'%}" alt="Item Image" />
+          <h2 class="itemName">Item_2</h2>
+          <p class="itemPrice">$ 200</p>
+          <button class="itemBuy">Buy Me</button>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="items_name">
+          {% load static %}
+          <img src="{% static 'images/item3B.jpg'%}" alt="Item Image" />
+          <h2 class="itemName">Item_3</h2>
+          <p class="itemPrice">$ 300</p>
+          <button class="itemBuy">Buy Me</button>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="items_name">
+          {% load static %}
+          <img src="{% static 'images/item4B.jpg'%}" alt="Item Image" />
+          <h2 class="itemName">Item_4</h2>
+          <p class="itemPrice">$ 400</p>
+          <button class="itemBuy">Buy Me</button>
+        </div>
+     </div>
+    </div>
+  </div>
+</div>
+ <div class="categories">
+  <div class="small-container">
+    <div class="item_Cart">
+      <div class="col-3">
+        <div class="items_name">
+          {% load static %}
+          <img src="{% static 'images/item_1.jpg'%}" alt="Item Image" />
+          <h2 class="itemName">Item 5</h2>
+          <p class="itemPrice">$ 500</p>
+          <button class="itemBuy">Buy Me</button>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="items_name">
+          {% load static %}
+          <img src="{% static 'images/item_2.jpg'%}" alt="Item Image" />
+          <h2 class="itemName">Item 6</h2>
+          <p class="itemPrice">$ 600</p>
+          <button class="itemBuy">Buy Me</button>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="items_name">
+          {% load static %}
+          <img src="{% static 'images/item_3.jpg'%}" alt="Item Image" />
+          <h2 class="itemName">Item 7</h2>
+          <p class="itemPrice">$ 700</p>
+          <button class="itemBuy">Buy Me</button>
+        </div>
+      </div>
+      <div class="col-3">
+        <div class="items_name">
+          {% load static %}
+          <img src="{% static 'images/item_4.jpg'%}" alt="Item Image" />
+          <h2 class="itemName">Item 8</h2>
+          <p class="itemPrice">$ 800</p>
+          <button class="itemBuy">Buy Me</button>
+        </div>
+     </div>
+    </div>
+  </div>
+</div>
+</section>
+<h2 class="itemSec2">Latest Products</h2>
+<!-- Image 1 -->
+<section id="item1" class="itemsCart1">
+  <div class="itemCard">
+    <div class="itemImage img1"> 
+      <div class="itemFilter">
+      </div>
+    </div>
+    <div class="price-title">
+      <h2 class="card-title">Product 1</h2>
+      <p class="price">$ 50</p>
+      <button class="itemImage">Buy Me</button>
+    </div>
+    <div class="sizes"></div>
+  </div>
+    <!-- Image 2 -->
+  <div class="itemCard">
+    <div class="itemImage img2">
+      <div class="itemFilter">
+      </div>
+    </div>
+    <div class="price-title">
+      <h2 class="card-title">Product 2</h2>
+      <p class="price">$ 100</p>
+      <button class="itemImage">Buy Me</button>
+    </div>
+    <div class="sizes">
+    </div>
+  </div>
+    <!-- Image 3 -->
+  <div class="itemCard">
+    <div class="itemImage img3">
+      <div class="itemFilter">
+      </div>
+    </div>
+    <div class="price-title">
+      <h2 class="card-title">Product 3</h2>
+      <p class="price">$ 150</p>
+      <button class="itemImage">Buy Me</button>
+    </div>
+    <div class="sizes">
+    </div>
+  </div>
+    <!-- Image 4 -->
+  <div class="itemCard">
+    <div class="itemImage img4">
+      <div class="itemFilter">
+      </div>
+    </div>
+    <div class="price-title">
+      <h2 class="card-title">Product 4</h2>
+      <p class="price">$ 200</p>
+      <button class="itemImage">Buy Me</button>
+    </div>
+    <div class="sizes">
+    </div>
+  </div>
+    <!-- Image 5 -->
+  <div class="itemCard">
+    <div class="itemImage img5">
+      <div class="itemFilter">
+      </div>
+    </div>
+    <div class="price-title">
+      <h2 class="card-title">Product 5</h2>
+      <p class="price">$ 250</p>
+      <button class="itemImage">Buy Me</button>
+    </div>
+    <div class="sizes">
+    </div>
+  </div>
+  <!-- Image 6 -->
+  <div class="itemCard">
+    <div class="itemImage img6">
+      <div class="itemFilter">
+      </div>
+    </div>
+    <div class="price-title">
+      <h2 class="card-title">Product 6</h2>
+      <p class="price">$ 300</p>
+      <button class="itemImage">Buy Me</button>
+    </div>
+    <div class="sizes">
+    </div>
+  </div>
+</section>
+br
+<h2 class="itemSec2">Latest Products</h2>
+<!-- Image 7 -->
+<section id="item2" class="itemsCart2">
+  <div class="itemCard">
+    <div class="itemImage img1">
+      <div class="itemFilter">
+      </div>
+    </div>
+    <div class="price-title">
+      <h2 class="card-title">Product 7</h2>
+      <p class="price">$ 350</p>
+      <button class="itemImage">Buy Me</button>
+    </div>
+    <div class="sizes">
+    </div>
+  </div>
+    <!-- Image 8 -->
+  <div class="itemCard">
+    <div class="itemImage img2">
+      <div class="itemFilter">
+      </div>
+    </div>
+    <div class="price-title">
+      <h2 class="card-title">Product 8</h2>
+      <p class="price">$ 400</p>
+      <button class="itemImage">Buy Me</button>
+    </div>
+    <div class="sizes">
+    </div>
+  </div>
+    <!-- Image 9 -->
+  <div class="itemCard">
+    <div class="itemImage img3">
+      <div class="itemFilter">
+      </div>
+    </div>
+    <div class="price-title">
+      <h2 class="card-title">Product 9</h2>
+      <p class="price">$ 450</p>
+      <button class="itemImage">Buy Me</button>
+    </div>
+    <div class="sizes">
+    </div>
+  </div>
+    <!-- Image 10 -->
+  <div class="itemCard">
+    <div class="itemImage img4">
+      <div class="itemFilter">
+      </div>
+    </div>
+    <div class="price-title">
+      <h2 class="card-title">Product 10</h2>
+      <p class="price">$ 500</p>
+      <button class="itemImage">Buy Me</button>
+    </div>
+    <div class="sizes">
+    </div>
+  </div>
+    <!-- Image 11 -->
+  <div class="itemCard">
+    <div class="itemImage img5">
+      <div class="itemFilter">
+      </div>
+    </div>
+    <div class="price-title">
+      <h2 class="card-title">AProduct 11</h2>
+      <p class="price">$ 550</p>
+      <button class="itemImage">Buy Me</button>
+    </div>
+    <div class="sizes">
+    </div>
+  </div>
+  <!-- Image 12 -->
+  <div class="itemCard"> 
+    <div class="itemImage img6">
+      <div id ="image6" class="itemFilter">
+      </div>
+    </div>
+    <div class="price-title">
+      <h2 class="card-title">Product 12</h2>
+      <p class="price">$ 600</p>
+      <button class="itemImage">Buy Me</button>
+    </div>
+    <div class="sizes">
+    </div>
+  </div>
+</section>
+{% endblock %}

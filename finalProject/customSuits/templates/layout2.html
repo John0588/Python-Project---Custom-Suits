@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script src="https://kit.fontawesome.com/d0e0ed0fcd.js" crossorigin="anonymous"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ {% load static %}
+ <link rel="stylesheet" href="{% static 'css/style.css'%}">
+ <script src="{% static 'js/script.js'%}"></script>
+ <title>Class Project</title>
+</head>
+
+<body>
+ <!-- Header Section -->
+ <h1><span>$20 OFF EVERY SHIRT WHEN PURCHASING</span> 3 SUITS OR MORE</h1>
+  <header>
+    <section class="first-header"> 
+      <a href="{% url 'home' %}" id="myLogo" target="_blank"> AJ's <i class="fas fa-user-tie"></i> FAITH </a>
+      <label id="label" for="toggle-1" class="toggleMenu">
+        <ul>
+        <li></li> 
+        <li></li> 
+        <li></li>
+        </ul>
+      </label>
+      <input type="checkbox" id="toggle-1">
+      <nav>
+        <ul>
+         <li><a href="{% url 'home' %}">HOME</a></li>
+         <li><a href="{% url 'item' %}">SHOP</a></li>
+         <li><a href="{% url 'cart' %}"><i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+ {% load static %}  
+ <img id="mainBack" src="{% static 'images/mainBackground2.jpg'%}" alt="home_Image" > 
+ {% block content %}
+ {% endblock %}
+ <!-- Footer Section -->
+  <section class="footerSec">
+        <footer class="footer_Sec">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <h6>About the Company</h6>
+                <p class="text-justify">AJ's <i class="fas fa-user-tie"></i> FAITH <i>Lorem ipsum dolor sit amet. </i> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis cumque officia quis necessitatibus ducimus iste accusamus molestias at minus rem? Aperiam, asperiores omnis cumque magni soluta, nisi sapiente corrupti vero doloremque consectetur sed expedita consequatur eaque pariatur reprehenderit hic rerum in ipsam illum totam accusantium quisquam nulla natus. Quisquam, explicabo.</p>
+              </div>
+
+              <div class="col-xs-6 col-md-3">
+                <h6>Discover Us</h6>
+                <ul class="footer-links">
+                  <ul class="footer-links">
+                    <li><a href="{% url 'about' %}">About Us</a></li>
+                    <li><a href="{% url 'services' %}">Our Services</a></li>
+                    <li><a href="{% url 'contactUs' %}">Contact Us</a></li>
+                    <li><a href="#">Shop Now</a></li>
+                  </ul>
+                </ul>
+              </div>
+
+              <div class="col-xs-6 col-md-3">
+                <h6>AJ's <i class="fas fa-user-tie"></i> FAITH</h6>
+                <ul class="footer-links">
+                  <li><a href="{% url 'maps' %}"><i class="fas fa-map-marker-alt"></i>  1463 Kingston Road <br> Scarborough, Ontario | M1N1R5</a></li><br>
+                  <li><a href="#"><i class="fas fa-envelope-open-text"></i>  test.johnaliah0529@gmail.com</a></li>
+                  <li><a href="#"><i class="fas fa-phone-square-alt"></i>  1 647-389-0593</a></li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-sm-6 col-xs-12">
+                <p class="copyright-text">AJ's <i class="fas fa-user-tie"></i> FAITH | triOs Student &copy; 2021</p>
+              </div>
+
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <ul class="social-icons">
+                  <li><a id="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                  <li><a id="twitter" href="https://twitter.com/login?lang=en-gb"><i class="fa fa-twitter"></i></a></li>
+                  <li><a id="instagram" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                  <li><a id="linkedin" href="https://ca.linkedin.com/"><i class="fa fa-linkedin"></i></a></li> 
+                </ul>
+              </div>
+            </div>
+          </div>
+    </footer>
+  </section>
+</body>
+</html>
